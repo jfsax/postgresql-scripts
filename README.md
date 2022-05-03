@@ -74,6 +74,11 @@ GRANT ALL PRIVILEGES ON DATABASE "meu_banco" to meu_usuario;
 ALTER USER meu_usuario WITH SUPERUSER;
 ```
 
+# Acessar banco de dados com usuário diferente do padrão
+```shell
+psql data_base -U meu_usuario
+```
+
 # Mostrar databases no client psql (show databases)
 ```shell
 \l+ # mostra tabela completa das databaes
